@@ -5,5 +5,5 @@ while True:
         a.append(age)
     elif age >= 30:
         break
-res = float(round(sum(a)/len(a), 2))
+res = round(sum(a)/len(a), 2)
 print("%.2f" %res)
