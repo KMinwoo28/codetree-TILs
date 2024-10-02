@@ -1,9 +1,9 @@
 a = []
-for i in range(100):
+while True:
     age = int(input())
-    if age <30:
+    if age <30 and age >= 20:
         a.append(age)
-    elif age >= 30:
+    else:
         break
 res = round(sum(a)/len(a), 2)
 print("%.2f" %res)
