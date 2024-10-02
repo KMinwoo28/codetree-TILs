@@ -1,5 +1,5 @@
 a = []
-while True:
+for i in range(100):
     age = int(input())
     if age <30:
         a.append(age)
