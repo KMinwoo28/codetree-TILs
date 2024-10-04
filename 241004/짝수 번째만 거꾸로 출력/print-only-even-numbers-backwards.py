@@ -1,2 +1,3 @@
 n = input()
-print(n[::-2])
+ev = n[1::2]
+print(ev[::-1])
