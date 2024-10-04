@@ -1,8 +1,10 @@
 n = input()
 order = input()
-for i in range(len(order)):
-    if order[i] == 'R':
-        n = n[-1] + n[:-1]
-    elif order[i] == 'L':
-        n = n[1:] + n[0]
+r = order.count('R')
+l = order.count('L')
+shift = r - l
+if shift < 0: # shift to left
+    n = n[abs(shift):] + n[:abs(shift)]
+else: # shift to right
+    n = n[:len(n) - shift] + n[len(n) - shift :]
 print(n)
