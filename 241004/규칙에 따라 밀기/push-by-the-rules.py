@@ -6,5 +6,5 @@ shift = r - l
 if shift < 0: # shift to left
     n = n[abs(shift):] + n[:abs(shift)]
 elif shift > 0: # shift to right
-    n = n[:-shift] + n[-shift :]
+    n = n[-shift :] + n[:-shift] 
 print(n)
