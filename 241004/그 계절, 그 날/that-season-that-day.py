@@ -5,10 +5,11 @@ def avail(y,m,d):
     yoon = False
     if y % 4 == 0:
         yoon = True
-    elif y % 4 == 0 and y % 100 == 0:
+    if y % 4 == 0 and y % 100 == 0:
         yoon = False
-    elif y % 4 == 0 and y % 100 == 0 and y % 400 == 0:
+    if y % 4 == 0 and y % 100 == 0 and y % 400 == 0:
         yoon = True
+
     if m != 2:
         if lastday[m - 1] < d:
             return -1
