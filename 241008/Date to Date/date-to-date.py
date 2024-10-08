@@ -6,6 +6,7 @@ if m1 == m2:
     s = d2 - d1 + 1
 else:
     s = num_of_days[m1] - d1 + d2 + 1
+
 for i in range(m1+1, m2):
-    s += num_of_days[i+1]
+    s += num_of_days[i]
 print(s)
