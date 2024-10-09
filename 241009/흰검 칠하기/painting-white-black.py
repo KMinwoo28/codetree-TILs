@@ -9,12 +9,12 @@ for i in range(n):
         for s in range(index, index + x):
             lst[s][1] += 1
             lst[s][2] = 1 # set to black
-        index += x
+        index += x - 1
     elif order == 'L':
-        for s in range(index-1, index - x-1, -1):
+        for s in range(index, index - x, -1):
             lst[s][0] += 1
             lst[s][2] = 0 # set to white
-        index -= x
+        index -= (x - 1) 
     #print(lst[index - 7:index+7])
 cnt_w = 0
 cnt_b = 0
