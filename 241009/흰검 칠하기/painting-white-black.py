@@ -19,7 +19,7 @@ for i in range(n):
 cnt_w = 0
 cnt_b = 0
 cnt_g = 0
-for i in range(100000):
+for i in range(200000):
     if (lst[i][0] + lst[i][1]) >= 1:
         # grey decision
         if lst[i][0] >= 2 and lst[i][1] >=2:
