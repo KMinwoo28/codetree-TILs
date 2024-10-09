@@ -1,5 +1,5 @@
-lst = [[0 for j in range(3)] for i in range(100000)] # W, B
-index = 50000
+lst = [[0 for j in range(3)] for i in range(200000)] # W, B
+index = 100000
 n = int(input())
 for i in range(n):
     x, order = input().split()
