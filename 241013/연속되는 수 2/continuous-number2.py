@@ -9,4 +9,5 @@ for i in range(n):
         cnt = 1
     else:
         cnt += 1
+cntlst.append(cnt)
 print(max(cntlst))
