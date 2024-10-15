@@ -14,20 +14,21 @@ def in_y_range(y, n):
 
 n, t = map(int,input().split())
 r, c, d = input().split()
-r = int(r)
-c = int(c)
+x = int(c) - 1
+y = int(r) - 1
 for i in range(t):
-    nx, ny = r + dx[direction[d]], c + dy[direction[d]]
+    nx, ny = x + dx[direction[d]], y + dy[direction[d]]
     if not in_x_range(nx, n):
         if d == 'L':
-            d == 'R'
+            d = 'R'
         elif d == 'R':
-            d == 'L'
+            d = 'L'
     elif not in_y_range(ny, n):
         if d == 'D':
-            d == 'U'
+            d = 'U'
         elif d == 'U':
-            d == 'D'
+            d = 'D'
     else:
-        r, c = r + dx[direction[d]], c + dy[direction[d]]
-print(r+1, c+1)
+        x, y = x + dx[direction[d]], y + dy[direction[d]]
+    
+print(y + 1, x+1)
