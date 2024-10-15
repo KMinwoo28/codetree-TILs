@@ -39,7 +39,7 @@ for i in range(N):
 d = 0
 # Initialization
 K = int(input()) - 1
-m, re = K // N, K % (N-1)
+m, re = K // N, K % N
 r, c = 0, 0
 match m:
     case 0:
