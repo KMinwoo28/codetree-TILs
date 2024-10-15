@@ -10,8 +10,9 @@ for i in range(n):
     a.append(list(map(int,input().split())))
 validcount = 0
 cnt = 0
-for x in range(n):
-    for y in range(n):    
+for i in range(n):
+    for j in range(n):    
+        x, y = i, j
         for dx, dy in zip(dxs, dys):
             nx, ny = x + dx, y + dy
             if in_range(nx, ny, n) and a[nx][ny] == 1:
