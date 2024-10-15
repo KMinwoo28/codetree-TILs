@@ -17,7 +17,7 @@ for i in range(n):
             nx, ny = x + dx, y + dy
             if in_range(nx, ny, n) and a[nx][ny] == 1:
                 cnt += 1
-    if cnt >= 3:
-        validcount += 1
-    cnt = 0
+        if cnt >= 3:
+            validcount += 1
+        cnt = 0
 print(validcount)
