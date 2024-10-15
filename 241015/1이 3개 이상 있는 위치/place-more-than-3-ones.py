@@ -18,4 +18,5 @@ for x in range(n):
                 cnt += 1
     if cnt >= 3:
         validcount += 1
+    cnt = 0
 print(validcount)
