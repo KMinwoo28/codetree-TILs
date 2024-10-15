@@ -39,7 +39,7 @@ for i in range(N):
 d = 0
 # Initialization
 K = int(input()) - 1
-m, re = K // N, K % 3
+m, re = K // N, K % (N-1)
 r, c = 0, 0
 match m:
     case 0:
@@ -49,13 +49,14 @@ match m:
         r, c = re, N-1
         d = 'L'
     case 2:
-        r, c = N-1, 2 - re
+        r, c = N-1, (N-1) - re
         d = 'U'
     case 3:
-        r, c = 2 - re, 0
+        r, c = (N-1) - re, 0
         d = 'R'
 cnt = 0
 while True:
+
     cnt += 1
     s = mirror[r][c]
     n_d = left_mir(d) if s == '\\' else right_mir(d)
