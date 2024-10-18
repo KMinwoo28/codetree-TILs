@@ -16,7 +16,7 @@ for i in range(5):
                 if k != i and k != j and l != i and l != j:
                     s = diff(i,j,k,l)
                     m = min(m, s)
-if m != 20000:
-    print(m)
-else:
+if m == 20000:
     print(-1)
+else:
+    print(m)
