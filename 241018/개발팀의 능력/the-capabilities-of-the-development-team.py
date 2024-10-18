@@ -10,10 +10,10 @@ def diff(i,j,k,l):
         return 20000
 m = 20000
 for i in range(5):
-    for j in range(1,5):
+    for j in range(5):
         for k in range(5):
-            for l in range(1,5):
-                if k != i and k != j and l != i and l != j:
+            for l in range(5):
+                if i != j and k != i and k != j and k != l and l != i and l != j:
                     s = diff(i,j,k,l)
                     m = min(m, s)
 if m == 20000:
