@@ -7,10 +7,10 @@ def diff(i,j,k,l):
     rst = abs(sum3 - sum2)
     rst = max(rst, abs(sum3 - sum1))
     rst = max(rst, abs(sum2 - sum1))
-    if sum1 == sum2 or sum2 == sum3 or sum1 == sum3:
-        return False, rst
-    else:
+    if sum1 != sum2 and sum2 != sum3:
         return True, rst
+    else:
+        return False, rst
 m = 20000
 for i in range(5):
     for j in range(1,5):
