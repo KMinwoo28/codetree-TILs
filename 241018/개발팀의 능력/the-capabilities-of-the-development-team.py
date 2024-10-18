@@ -15,9 +15,8 @@ for i in range(5):
             for l in range(1,5):
                 if k == i or k == j or l == i or l == j:
                     continue
-                else:
-                    s = diff(i,j,k,l)
-                    m = min(m, s)
+                s = diff(i,j,k,l)
+                m = min(m, s)
 if m != 20000:
     print(m)
 else:
