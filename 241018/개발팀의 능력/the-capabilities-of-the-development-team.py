@@ -13,10 +13,9 @@ for i in range(5):
     for j in range(1,5):
         for k in range(5):
             for l in range(1,5):
-                if k == i or k == j or l == i or l == j:
-                    continue
-                s = diff(i,j,k,l)
-                m = min(m, s)
+                if k != i and k != j and l != i and l != j:
+                    s = diff(i,j,k,l)
+                    m = min(m, s)
 if m != 20000:
     print(m)
 else:
