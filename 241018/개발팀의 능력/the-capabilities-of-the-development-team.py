@@ -8,9 +8,9 @@ def diff(i,j,k,l):
     rst = max(rst, abs(sum3 - sum1))
     rst = max(rst, abs(sum2 - sum1))
     if sum1 != sum2 and sum2 != sum3 and sum3 != sum1:
-        return True, rst
+        return rst
     else:
-        return False, rst
+        return 20000
 m = 20000
 for i in range(5):
     for j in range(1,5):
@@ -18,9 +18,8 @@ for i in range(5):
             for l in range(1,5):
                 if k == i or k == j or l == i or l == j:
                     continue
-                av, s = diff(i,j,k,l)
-                if av:
-                    m = min(m,s)
+                s = diff(i,j,k,l)
+                m = min(m, s)
 if m != 20000:
     print(m)
 else:
