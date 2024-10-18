@@ -7,7 +7,7 @@ def diff(i,j,k,l):
     rst = abs(sum3 - sum2)
     rst = max(rst, abs(sum3 - sum1))
     rst = max(rst, abs(sum2 - sum1))
-    if sum1 != sum2 and sum2 != sum3:
+    if sum1 != sum2 and sum2 != sum3 and sum3 != sum1:
         return True, rst
     else:
         return False, rst
